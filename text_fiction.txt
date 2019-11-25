@@ -1,0 +1,477 @@
+﻿CENA
+titulo
+O MISTERIO
+Lara era uma pessoa que amava ler livros. Em um belo dia, Lara resolveu ir ao parque para relaxar e ler um livro. Porem, algo estranho aconteceu naquele dia, Lara foi parar em um lugar totalmente desconhecido. Ajude-a a sobreviver e a desvendar esse misterio.
+
+COMANDO
+titulo_iniciar
+COMANDO
+Iniciar Jogo
+Seja bem vindo ao jogo! Vamos iniciar.
+inicio
+NONE
+NONE
+
+COMANDO
+titulo_sair
+ACTION
+Sair do jogo
+Ate a proxima...
+exit
+NONE
+NONE
+
+END
+
+CENA
+inicio
+Porao Obscuro
+Numa noite fria e tenebrosa Lara abre os olhos e percebe que esta deitada no chao do porao em um lugar desconhecido. Um ambiente amplo, com pouco iluminacao e com um cheiro nao muito agradavel. Ha uma porta subindo as escadas. A porta parece estar trancada e ha um pedaco da porta envolvido por cordas. Logo ao lado de Lara ha um bau. Em sua frente, ha uma mesa com uma chave em cima. No outro canto da sala ha uma caixa antiga. No canto aa direita ha um quadro sofisticado em cima de uma lareira. Ao lado oposto, uma cama desarrumada.
+
+COMANDO
+inicio_corda_flecha
+ITEM
+Ivestigar caixa antiga
+Ao abrir a caixa Lara encontra uma corda e uma flecha que, podem ser utilizados para puxar algo.
+corda e flecha
+NONE
+NONE
+
+COMANDO
+inicio_chave
+ITEM
+Pegar chave
+Lara pegou a chave.
+chave
+NONE
+NONE
+
+COMANDO
+inicio_arco
+ITEM
+Investigar bau
+Ao abrir o bau, Lara encontra um arco flechas antigo.
+arco
+NONE
+NONE
+
+COMANDO
+inicio_quadro
+ACTION
+Ivestigar quadro
+Ao se aproximar do quadro Lara percebe que possui algo estranho, ha alguem na fotografia, porem seu rosto esta borrado com sangue.
+NONE
+NONE
+NONE
+
+COMANDO
+inicio_lareira
+ACTION
+Investigar lareira
+Ao investigar a lareira Lara percebe que ha uma alavanca. Lara puxa a alavanca e entao o chao se abre e Lara cai num buraco escuro.
+nova_cena
+NONE
+NONE
+
+COMANDO
+inicio_porta
+ACTION
+Usar porta
+Lara arremessou a corda com seu arco e flecha e puxou a corda. A porta se abriu…
+nova_cena
+inicio_corda_flecha, inicio_arco
+Não ha itens suficientes.
+
+COMANDO
+inicio_cama
+ACTION
+Checar debaixo da cama
+Nao havia nada ali embaixo.
+NONE
+NONE
+NONE
+
+END
+
+CENA
+sala
+SALA SECRETA
+Ao cair pelo buraco escuro, Lara encontra uma sala secreta. Um ambiente umido e gelado e, com um cheiro forte, como se alguem tivesse morrido logo ali. Um vento gelado passa por Lara e, Lara sente um forte aperto em seu coracao, como se estivesse chegando ao final de sua vida. Lara fica desesperada e comeca a procurar um jeito de sair daquela sala apertada. Ao comecar a procurar por uma saida, se depara com uma mancha de sangue escorrendo pela parede, como se alguem tivesse acabado de morrer. Ao seguir a trilha de sangue, Lara tromba com um esqueleto, como se estivesse morto a anos e não a minutos atras como os rastros indicavam. Ao olhar para o canto esquerdo da parede, enxerga-se uma luz la adiante e logo abaixo uma parede de pedra, usada para escaladas. Logo a direita, um bau feito a ouro e enfeitado com diamantes.
+
+COMANDO
+sala_parede
+ACTION
+Subir pela parede de pedras
+Lara escala a parede de pedras.
+nova_cena
+sala_picareta
+Parece que ha uma saida logo acima, porem preciso encontrar algo que me ajude a escalar.
+
+COMANDO
+sala_picareta
+ITEM
+Investigar esqueleto
+Ao se aproximar, Lara percebe que o mesmo se encontra segurando uma picareta e o pega.
+picareta
+NONE
+NONE
+
+COMANDO
+sala_bau
+ACTION
+Investigar bau
+Lara foi enganado. O bau estava vazio, não tinha diamantes e ouro como esperava encontrar.
+NONE
+NONE
+NONE
+
+END
+
+CENA
+corredor
+CORREDOR DO DESTINO: SEGUE OU MORRE!!
+Ao passar pela porta, Lara se depara com um lugar meio estreito e com pouca iluminacao. Paredes rasgadas e manchas de sangue por todo o lado, como se alguem tivesse sido atacado por animais selvagens e nao tivesse sobrevivido. Assustada, tenta entender aonde estas e o que esta acontecendo. Aquele lugar nao se parecia nem um pouco com o parque em que estava. Ultima coisa que Lara se lembrava era que estava encostada em uma arvore lendo e, logo apos, se deparou deitada num porao e agora aqui, num corredor que chega a dar arrepios. Lara ,então, procura relaxar e a buscar por saidas. Logo a sua direita ha uma porta toda cor de rosa, a sua esquerda uma porta vermelha como sangue e listas brancas como a neve e, em sua frente, no final do corredor, uma porta feita de madeira rustica, bem antiga, revestida a prata.
+
+COMANDO
+corredor_direita
+ACTION
+Checar porta da direita
+Lara abre a porta. Ao tentar atravessar, Lara cai num arbusto cheio de espinhos e morre.
+gameover
+NONE
+NONE
+
+COMANDO
+corredor_esquerda
+ACTION
+Checar porta da esquerda
+Lara abre a porta, porém com medo do que vinha adiante fecha os olhos e da o primeiro passo...
+nova_cena
+inicio_chave
+Falta item.
+
+COMANDO
+corredor_frente
+ACTION
+Checar porta final do corredor
+Lara ao abrir a porta se depara com a morte, que a leva em segundos.
+gameover
+NONE
+NONE
+
+END
+
+CENA
+alucinacao
+ALUCINACAO
+Lara ao abrir os olhos se deparou com um lugar lindo, todo colorido, lotado de flores belas. Uma paisagem encantadora, um lugar em que começou a se sentir livre/segura. Contudo, apos esse sentimento, em questao de segundos, o lugar começou a ficar em preto e branco, com um cheiro horrivel. As belas flores, o lugar em si, nao existiam, era tudo fruto de sua imaginacao. O lugar se parecia mais com beco sem saida. Havia um pedaco de pano, uma caixa, uma janela,  uma pedra e um gancho.
+
+COMANDO
+alucinacao_caixa
+ACTION
+Investigar caixa
+Lara encontrou um óculos de sol,  feito com o marfim de morsas. Eles eram utilizados pelos esquimos para reduzir o intenso brilho do sol refletido na neve. A reliquia tinha mais de 800 anos.
+NONE
+NONE
+NONE
+
+COMANDO
+alucinacao_pano
+ITEM
+Pegar pedaco de pano
+Lara, pegou o pedaco de pano.
+pano
+NONE
+NONE
+
+COMANDO
+alucinacao_janela
+ACTION
+Investigar Janela
+Lara quebrou a janela com a pedra. Amarrou a corda no  gancho, jogou o gancho pela a janela, varias e varias vezes, ate que ficasse firme  e subiu.
+nova_cena
+alucinacao_pano, alucinacao_pedra
+A janela parece estar a uns 3 metros do chao. Preciso de algo que me ajude a chegar ate la.
+
+COMANDO
+alucinacao_pedra
+ITEM
+Investigar pedra
+Parece uma pedra normal e Lara a pega. Pedras podem ser uteis para quebrar a janela.
+pedra
+NONE
+NONE
+
+END
+
+CENA
+passado
+VOLTANDO AO PASSADO
+Lara, ao sair pela janela, pensou que finalmente estaria livre, porem a sua travessia so estava comecando. Lara, deu de cara com um quarto de crianca, muito parecido com o qual passou sua infancia. Entretanto, nao era tao aconchegante como se lembrava. Lara lembrou que passou inumeras noites de castigo dentro do armario trancada. No quarto havia uma pequena cama caindo aos pedacos, ao seu lado uma comoda velha, ao lado esquerdo da cama havia um interruptor e logo a frente uma porta.
+
+COMANDO
+passado_interruptor
+ACTION
+Investigar interruptor
+Ao se aproximar do interruptor, Lara percebe que o chao parece estar meio tremulo e que pode despencar a qualquer momento.
+NONE
+NONE
+NONE
+
+COMANDO
+passado_porta
+ACTION
+Checar porta
+A porta se abre e Lara passa por ela com o pe direito, na esperanca de ter alguma sorte no que havia por vir.
+nova_cena
+passado_chave
+A porta parece estar trancada. Lara precisa de algo que a ajude abrir a porta.
+
+COMANDO
+passado_cama
+ACTION
+Investigar cama
+A cama parece estar meio instavel. Contudo, Lara deparou-se com um livro, O Pequeno Principe. Isso so levou lembrancas de quando seu pai era vivo e relia toda a noite seu livro preferido.
+NONE
+NONE
+NONE
+
+COMANDO
+passado_chave
+ITEM
+Investigar comoda
+Ao abrir a comoda, cheia de teias de aranhas, Lara encontrou uma chave.
+chave
+NONE
+NONE
+
+COMANDO
+passado_armario
+ACTION
+Investigar armario
+Ao abrir a porta do armario, Lara encontrou um par de meias que seu avo havia lhe dado de presente de uma excursao para o Egito que ele havia feito. Esse par de meia provavelmente era utilizado com sandalias e estima-se que tenha sido produzido entre 300 e 499 d.c.
+NONE
+NONE
+NONE
+
+END
+
+CENA
+cozinha
+COZINHA
+A esperança ainda estava viva no coracao de Lara,  apesar de nada fazer sentido. Agora, Lara  encontrava-se numa cozinha antiga, limpa, com aroma de rosas, orquideas e varias outros tipos de flores e, raios de sol passando pela janela, iluminando o lugar.  A expectativa so floresceu ainda mais naquele coracaozinho esperancoso. Porem, Lara nao imaginava no que havia logo depois daquela porta de madeira macica ao lado de uma cadeira. Na cozinha, tambem, havia um fogao a lenha, uma bancada com banquinhos, um armario velho e uma pia revestida a prata. Em cima da bancada havia uma caixa revestida a ouro com algumas pedras de rubi.
+
+COMANDO
+cozinha_pia
+ACTION
+Investigar pia
+Ao abrir a torneira da pia, nao obteve sucesso. Nao havia agua.
+NONE
+NONE
+NONE
+
+COMANDO
+cozinha_caixa
+ACTION
+Investigar caixa
+Ao abrir a caixa, Lara encontrou uma receita antiga de cerveja que era produzida pelo povo sumerio. EE considerado a receita mais antiga ja encontrada. O modo de preparo da cerveja foi escrita em uma tabua por volta de 3 mil anos a.c.
+NONE
+NONE
+NONE
+
+COMANDO
+cozinha_armario
+ACTION
+Checar armario
+Ao abrir a porta do armario, Lara ficou encantada com o tanto de loucas finas que havia ali. Nunca tinha vista tanta coisa bela em um so lugar.
+NONE
+NONE
+NONE
+
+COMANDO
+cozinha_porta
+ACTION
+Checar porta
+A porta se abre e Lara passa com um certo alivio de confiante que tudo ira melhorar daqui pra frente.
+nova_cena
+cozinha_perna_da_cadeira
+A porta parece estar bem reforcada. Lara precisa de algo que a ajude a abrir a porta.
+
+COMANDO
+cozinha_perna_da_cadeira
+ITEM
+Investigar cadeira
+A cadeira esta caindo aos pedacos e umas das pernas quase caindo. A perna da cadeira  deve ser util para ajudar a forcar algo.
+perna da cadeira
+NONE
+NONE
+
+COMANDO
+cozinha_fogao
+ACTION
+Checar fogao a lenha
+O fogao parece que ainda funciona. Esta bem cuidado.
+NONE
+NONE
+NONE
+
+END
+
+CENA
+terror
+SALA DO TERROR
+As esperancas que Lara  tinha de sair viva dali acabou de ir por agua abaixo. Lara, acabou se encontrando numa sala escura, com mal cheiro e sangue por todo o lugar. Na parede havia algo escrito a sangue e, um gato pendurado morto logo ao lado. Lara, ao olhar para o lado esquerdo deu um grito de susto, havia dois esqueletos se mexendo como se estivessem vivos. A vontade era de sair correndo dali, porem a porta estava trancada. Lara, precisava arrumar um jeito de sair dali.
+
+COMANDO
+terror_esqueleto
+ACTION
+Checar esqueleto
+A vontade de sair dali falou mais alto, porem nao havia nada que pudesse ajudar a sair dali. Contudo, Lara, percebeu que os esqueletos nao estavam vivos, que era apenas o vento que passava pela fresta da porta que os mexiam.
+NONE
+NONE
+NONE
+
+COMANDO
+terror_chave
+ITEM
+Investigar a escrita na parede
+Era impossivel ler o que estava escrito ali, porem ao olhar para o chao, Lara, encontra uma chave impossada de sangue.
+chave
+NONE
+NONE
+
+COMANDO
+terror_porta
+ACTION
+Investigar porta
+Lara abre a porta com a chave toda cheia de sangue
+nova_cena
+terror_chave
+Falta alguma coisa para conseguir abrir a porta
+
+END
+
+CENA
+torre
+TORRE SEM SAIDA
+Ao passar pela porta, Lara viu uma escada e começou a subir, ja que era pro unico lugar que era possivel ir. Subindo a escada, foi reparando que havia varias teias de aranhas, como se ninguem passasse por ali a seculos. Ao chegar ao ultimo degrau, Lara reparou que nao havia mais saida. Nao havia mais portas e, a unica janela que tinha ali, era toda reformada com grades grossas. Foi ai que Lara percebeu que estava presa em uma torre. Porem, o lugar se parecia muito com um quarto de alguem que era mantido presa. Ao olhar pelas paredes, percebeu que havia varios desenhos coloridos,  refletindo a esperanca de uma crianca. Havia, tambem, uma cama toda cor de rosa enfeitada com arcos de flores, um armario pequeno, uma cadeira antiga. Em frente a cama, havia uma estante cheia de livros antigos.
+
+COMANDO
+torre_desenho
+ACTION
+Investigar os desenhos
+Os desenhos eram maravilhosos e, todos acabavam num formato de sol, como se fosse simbolo de algum lugar desconheciddo.
+NONE
+NONE
+NONE
+
+COMANDO
+torre_cama
+ACTION
+Investigar cama
+A cama estava bem arrumadinha, porem, nao foi encontrado nada.
+NONE
+NONE
+NONE
+
+COMANDO
+torre_vestido
+ITEM
+Investigar armario
+Havia um vestido mais lindo que o outro. Entao, Lara escolheu um pra ela e colocou dentro de uma bolsa que estava ao lado.
+vestido
+NONE
+NONE
+
+COMANDO
+torre_cadeira
+ACTION
+Investigar cadeira
+A cadeira não parece estar muito segura para se usar.
+NONE
+NONE
+NONE
+
+COMANDO
+torre_estante
+ACTION
+Investigar estante de livro
+Ao se aproximar da estante, Lara percebeu que havia um livro diferente entre todos eles, colorido. Lara, ao tentar pegar o livro para matar sua curiosidade, ficou espantada! A estante comecou a se mover. Lara achou uma saida!!
+nova_cena
+torre_vestido
+Para investigar a estante falta um item
+
+END
+
+CENA
+final1
+THE END 1
+Lara ao atravessar pela passagem secreta, acabou caindo num buraco escuro e, bateu a cabeça muito forte no chão. Quando Lara, recobrou a consciência e abriu os olhos, reparou que estava de volta ao Parque, encostada no tronco da árvore e com o livro “O pequeno Príncipe” nas mãos. Lara, ficou confusa e, no momento em que olhou para o lado viu uma bolsa que não lembrava de ter trazido. Ao abrir a bolsa para checar o que havia dentro, Lara encontrou um vestido toda cor de rosa e cheia de pedras, o mesmo o qual tinha pego em seus sonhos. Agora, resta saber: sonho ou realidade?!
+
+END
+
+CENA
+destino
+CORREDOR DO DESTINO
+Ao escalar a parede de pedras, Lara se depara com um corredor todo preto e com pouca iluminacao. O corredor nao tinha cheiro muito agradavel e, havia teias de aranha por todo o lado. Lara, assustada comecou a imaginar o por que dela estar ali e,  por que esta acontecendo isso com ela. Lara nao enxergava nada alem de preto. No momento em que seus olhos comecaram a se acostumar com a pouca iluminacao, Lara avistou apenas 2 porta. A porta da direita era toda laranja com detalhes em branco e a porta da esquerda era um azul celeste com detalhes pretos.
+
+COMANDO
+destino_esquerda
+ACTION
+Investigar porta da esquerda
+Lara teve seu destino na palma de sua mao, porem escolheu a porta errada. Ao abrir a porta, uma cascavel, que estava pronta para o dar bote, aa matou.
+gameover
+NONE
+NONE
+
+COMANDO
+destino_direita
+ACTION
+Investigar porta da direita
+Lara, pensando no que vinha adiante, fechou seus olhos e passou pela porta.
+nova_cena
+NONE
+NONE
+
+END
+
+CENA
+jantar
+SALA DE JANTAR
+Lara, ao abrir os olhos se deparou com um lugar horrivel. As paredes da sala estava toda coberta de sangue. Um cheiro desagradavel e, um ambiente com pouca luz. Unica luz que havia ali, era fornecida por uma leve fresta da janela. Havia uma mesa de jantar com cinco lugares. Os lugares estavam ocupados por pessoas se decompondo, o que explicava o cheiro desagradavel. Tambem, havia um armario de vidro e uma porta aa sua frente.
+
+COMANDO
+jantar_mesa
+ACTION
+Investigar mesa de jantar
+Lara, ao se aproximar da mesa e das cadeiras, se deu conta que se tratava de uma familia. Ao olhar mais a fundo, percebeu que cada um deles estavam com um buraco na cabeca, indicando que foram mortos a mao armada.
+NONE
+NONE
+NONE
+
+COMANDO
+jantar_chave
+ITEM
+Investigar armario
+Ao olhar pela porta de vidro Lara percebe que ha uma chave dentro de uma das xicaras e a pega.
+chave
+NONE
+NONE
+
+COMANDO
+jantar_porta
+ACTION
+Investigar porta
+Lara abre a porta, mas algo a atinge e Lara acaba desmaiando. Ao abrir os olhos, percebe que esta amarrada em uma das cadeiras da sala em que estava. Tenta sair dali, mas era inutil, as cordas estavam bem amarradas. Minutos depois de gritar por socorro, um homem misterioso aparece. Lara, ao ver o homem pensou que estava livre… o moço, entao, a mata com um tiro na cabeça, do mesmo jeito que matou a familia desconhecida. THE END!!
+nova_cena
+jantar_chave
+A porta parece estar trancada
+
+END
+
+CENA
+final2
+THE END 2
+Lara ao abrir os olhos, percebe que está amarrada em uma das cadeiras da sala em que estava. Tenta sair dali, mas era inútil, as cordas estavam bem amarradas. Minutos depois de gritar por socorro, um homem misterioso aparece. Lara, ao ver o homem pensou que estava livre… o moço, então, a mata com um tiro na cabeça, do mesmo jeito que matou a família desconhecida.
+
+END
